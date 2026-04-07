@@ -4,6 +4,6 @@ Welcome to the driver hub of **HITSZ Wentian Robotics Team**
 #### 📦 This org hosts a series of driver libraries developed for robotics competitions.  
 🔧 All drivers are based on **STM32 + HAL**.  
 
-📋 **Driver Index**: [Browse driver list](https://github.com/HITSZ-WTRobot-Packages/.github/main/index.md)
+📋 **Driver Index**: [Browse driver list](https://github.com/HITSZ-WTRobot-Packages/.github/blob/main/index.md)
 
 🚀 Feel free to explore, reuse, and contribute!
