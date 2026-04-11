@@ -1,0 +1,398 @@
+{
+  "generated_at": "2026-04-07T05:13:20.607746+00:00",
+  "packages": [
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/utils",
+      "name": "utils",
+      "pkgname": "utils",
+      "version": "0.1.0",
+      "dependencies": [
+        "stm32cubemx"
+      ]
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/libs/concurrency",
+      "name": "Concurrency",
+      "pkgname": "libs::Concurrency",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/libs/traits",
+      "name": "traits",
+      "pkgname": "traits",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/libs/utils/crc",
+      "name": "CRC",
+      "pkgname": "libs::CRC",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/libs/utils/fixed_map",
+      "name": "FixedMap",
+      "pkgname": "libs::FixedMap",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/libs/utils/printf",
+      "name": "printf",
+      "pkgname": "libs::printf",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/libs/utils/ring_buffer",
+      "name": "RingBuffer",
+      "pkgname": "libs::RingBuffer",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/libs/utils/deque",
+      "name": "Deque",
+      "pkgname": "libs::Deque",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/libs/math/EKF",
+      "name": "EKF",
+      "pkgname": "Math::EKF",
+      "version": "0.1.0",
+      "dependencies": [
+        "Math::LinearAlgebra"
+      ]
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/libs/math/Geometry",
+      "name": "Geometry",
+      "pkgname": "Math::Geometry",
+      "version": "0.1.0",
+      "dependencies": [
+        "Math::LinearAlgebra"
+      ]
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/libs/math/LinearAlgebra",
+      "name": "LinearAlgebra",
+      "pkgname": "Math::LinearAlgebra",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/libs/control/mit_pd",
+      "name": "MIT_PD",
+      "pkgname": "libs::MIT_PD",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/libs/control/pid_motor",
+      "name": "PIDMotor",
+      "pkgname": "libs::PIDMotor",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/libs/control/pid_pd",
+      "name": "PID_PD",
+      "pkgname": "libs::PID_PD",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/services/watchdog",
+      "name": "Watchdog",
+      "pkgname": "services::Watchdog",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/protocol/UartRxSync",
+      "name": "UartRxSync",
+      "pkgname": "protocol::UartRxSync",
+      "version": "0.1.0",
+      "dependencies": [
+        "stm32cubemx",
+        "services::Watchdog"
+      ]
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/bsp/can_driver",
+      "name": "CANDriver",
+      "pkgname": "bsp::CANDriver",
+      "version": "0.1.0",
+      "dependencies": [
+        "stm32cubemx",
+        "libs::RingBuffer",
+        "utils"
+      ]
+    },
+    {
+      "repo": "BasicComponents",
+      "path": "Modules/BasicComponents/bsp/gpio_driver",
+      "name": "GPIO_Driver",
+      "pkgname": "bsp::GPIO_Driver",
+      "version": "0.1.0",
+      "dependencies": [
+        "stm32cubemx"
+      ]
+    },
+    {
+      "repo": "MotorDrivers",
+      "path": "Modules/MotorDrivers/controllers",
+      "name": "Controller",
+      "pkgname": "MotorDrivers::Controller",
+      "version": "0.1.0",
+      "dependencies": [
+        "MotorDrivers::Core",
+        "libs::PIDMotor"
+      ]
+    },
+    {
+      "repo": "MotorDrivers",
+      "path": "Modules/MotorDrivers/core",
+      "name": "Core",
+      "pkgname": "MotorDrivers::Core",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "MotorDrivers",
+      "path": "Modules/MotorDrivers/motors/DJI",
+      "name": "DJI",
+      "pkgname": "MotorDrivers::DJI",
+      "version": "0.1.0",
+      "dependencies": [
+        "MotorDrivers::Core",
+        "bsp::CANDriver",
+        "services::Watchdog"
+      ]
+    },
+    {
+      "repo": "MotorDrivers",
+      "path": "Modules/MotorDrivers/motors/DM",
+      "name": "DM",
+      "pkgname": "MotorDrivers::DM",
+      "version": "0.1.0",
+      "dependencies": [
+        "MotorDrivers::Core",
+        "bsp::CANDriver",
+        "services::Watchdog",
+        "libs::FixedMap"
+      ]
+    },
+    {
+      "repo": "MotorDrivers",
+      "path": "Modules/MotorDrivers/motors/VESC",
+      "name": "VESC",
+      "pkgname": "MotorDrivers::VESC",
+      "version": "0.1.0",
+      "dependencies": [
+        "MotorDrivers::Core",
+        "bsp::CANDriver",
+        "services::Watchdog",
+        "libs::FixedMap"
+      ]
+    },
+    {
+      "repo": "ChassisController",
+      "path": "Modules/ChassisController/Core",
+      "name": "Core",
+      "pkgname": "Chassis::Core",
+      "version": "0.1.0",
+      "dependencies": [
+        "FreeRTOS",
+        "libs::MIT_PD",
+        "MotorDrivers::Controller"
+      ]
+    },
+    {
+      "repo": "ChassisController",
+      "path": "Modules/ChassisController/Localization/JustEncoder",
+      "name": "JustEncoder",
+      "pkgname": "ChassisLocalization::JustEncoder",
+      "version": "0.1.0",
+      "dependencies": [
+        "Chassis::Core"
+      ]
+    },
+    {
+      "repo": "ChassisController",
+      "path": "Modules/ChassisController/Localization/EKF",
+      "name": "EKF",
+      "pkgname": "ChassisLocalization::EKF",
+      "version": "0.1.0",
+      "dependencies": [
+        "Chassis::Core",
+        "SensorGyro::HWT101CT",
+        "Math::EKF",
+        "libs::Deque",
+        "libs::Concurrency"
+      ]
+    },
+    {
+      "repo": "ChassisController",
+      "path": "Modules/ChassisController/Chassis/Mecanum4",
+      "name": "Mecanum4",
+      "pkgname": "Chassis::Mecanum4",
+      "version": "0.1.0",
+      "dependencies": [
+        "Chassis::Core",
+        "FreeRTOS"
+      ]
+    },
+    {
+      "repo": "ChassisController",
+      "path": "Modules/ChassisController/Chassis/Omni4",
+      "name": "Omni4",
+      "pkgname": "Chassis::Omni4",
+      "version": "0.1.0",
+      "dependencies": [
+        "Chassis::Core",
+        "FreeRTOS"
+      ]
+    },
+    {
+      "repo": "ChassisController",
+      "path": "Modules/ChassisController/Chassis/Steering4",
+      "name": "Steering4",
+      "pkgname": "Chassis::Steering4",
+      "version": "0.1.0",
+      "dependencies": [
+        "Chassis::Core",
+        "FreeRTOS",
+        "bsp::GPIO_Driver"
+      ]
+    },
+    {
+      "repo": "ChassisController",
+      "path": "Modules/ChassisController/Controller/Master",
+      "name": "ControllerMaster",
+      "pkgname": "Chassis::ControllerMaster",
+      "version": "0.1.0",
+      "dependencies": [
+        "Chassis::Core",
+        "VelocityProfile::SCurve"
+      ]
+    },
+    {
+      "repo": "ChassisController",
+      "path": "Modules/ChassisController/Controller/Slave",
+      "name": "ControllerSlave",
+      "pkgname": "Chassis::ControllerSlave",
+      "version": "0.1.0",
+      "dependencies": [
+        "Chassis::Core",
+        "libs::RingBuffer"
+      ]
+    },
+    {
+      "repo": "Sensors",
+      "path": "Modules/Sensors/ops/ActionOPS",
+      "name": "ActionOPS",
+      "pkgname": "SensorOPS::ActionOPS",
+      "version": "0.1.0",
+      "dependencies": [
+        "protocol::UartRxSync",
+        "FreeRTOS"
+      ]
+    },
+    {
+      "repo": "Sensors",
+      "path": "Modules/Sensors/laser/dt35",
+      "name": "DT35",
+      "pkgname": "SensorLaser::DT35",
+      "version": "0.1.0",
+      "dependencies": [
+        "protocol::UartRxSync"
+      ]
+    },
+    {
+      "repo": "Sensors",
+      "path": "Modules/Sensors/laser/stp23l",
+      "name": "STP23L",
+      "pkgname": "SensorLaser::STP23L",
+      "version": "0.1.0",
+      "dependencies": [
+        "protocol::UartRxSync"
+      ]
+    },
+    {
+      "repo": "Sensors",
+      "path": "Modules/Sensors/gyro/HWT101CT",
+      "name": "HWT101CT",
+      "pkgname": "SensorGyro::HWT101CT",
+      "version": "0.1.0",
+      "dependencies": [
+        "protocol::UartRxSync",
+        "utils"
+      ]
+    },
+    {
+      "repo": "Sensors",
+      "path": "Modules/Sensors/gyro/JY901S",
+      "name": "JY901S",
+      "pkgname": "SensorGyro::JY901S",
+      "version": "0.1.0",
+      "dependencies": [
+        "FreeRTOS",
+        "Math::Geometry",
+        "protocol::UartRxSync",
+        "utils"
+      ]
+    },
+    {
+      "repo": "VelocityProfile",
+      "path": "Modules/VelocityProfile/Core",
+      "name": "Core",
+      "pkgname": "VelocityProfile::Core",
+      "version": "0.1.0",
+      "dependencies": []
+    },
+    {
+      "repo": "VelocityProfile",
+      "path": "Modules/VelocityProfile/SCurve",
+      "name": "SCurve",
+      "pkgname": "VelocityProfile::SCurve",
+      "version": "0.1.0",
+      "dependencies": [
+        "VelocityProfile::Core"
+      ]
+    },
+    {
+      "repo": "TrajectoryControl",
+      "path": "Modules/TrajectoryControl/MotorTrajectory",
+      "name": "MotorTrajectory",
+      "pkgname": "Trajectory::MotorTrajectory",
+      "version": "0.1.0",
+      "dependencies": [
+        "VelocityProfile::SCurve",
+        "MotorDrivers::Controller",
+        "libs::PID_PD"
+      ]
+    }
+  ]
+}
