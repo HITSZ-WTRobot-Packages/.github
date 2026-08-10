@@ -6,4 +6,6 @@ Welcome to the driver hub of **HITSZ Wentian Robotics Team**
 
 📋 **Driver Index**: [Browse driver list](https://github.com/HITSZ-WTRobot-Packages/.github/blob/main/index.md)
 
+📊 **Documents and Development Guide**: <https://docs.wtrobot.moe>
+
 🚀 Feel free to explore, reuse, and contribute!
